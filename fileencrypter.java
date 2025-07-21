@@ -19,7 +19,7 @@ public class fileencrypter {
             char[] ch=s.toCharArray();
             for(int i=0;i<ch.length;i++){
                 key[i]=(int)(Math.random()*256);
-                System.out.println("key for "+ch[i]+" is "+key[i]);
+                //System.out.println("key for "+ch[i]+" is "+key[i]);
                 ch[i]=encrypt(ch[i], key[i]);
             }
             s=new String(ch);
@@ -47,7 +47,7 @@ public class fileencrypter {
         while(s!=null){
             char[] ch=s.toCharArray();
             for(int i=0;i<ch.length;i++){
-                System.out.println("key for "+ch[i]+" is "+key[i]);
+                //System.out.println("key for "+ch[i]+" is "+key[i]);
                 ch[i]=decrypt(ch[i], key[i]);
             }
             s=new String(ch);
